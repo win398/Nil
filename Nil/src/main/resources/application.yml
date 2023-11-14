@@ -1,0 +1,49 @@
+web:
+   nil_pic: F:/SE Homework/nil_pic
+#  nil_pic: E:/studyFile/AndroidKit/nil_pic/
+
+server:
+  port: 8085
+spring:
+  datasource:
+    #   数据源基本配置
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/nil?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    type: com.alibaba.druid.pool.DruidDataSource
+    #   Druid数据源配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+  #redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 1000
+    database: 0
+    jedis:
+      pool:
+        max-active: 10
+        max-idle: 8
+        min-idle: 2
+        max-wait: 100
+  #mongo
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mongoo
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: nil-group
+    send-message-timeout: 3000
+

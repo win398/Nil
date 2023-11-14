@@ -1,0 +1,18 @@
+package cn.edu.hbpu.nil.service;
+
+import cn.edu.hbpu.nil.entity.UpdateComment;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
+
+/**
+ * <p>
+ *  服务类
+ * </p>
+ *
+ * @author hbpu
+ * @since 2022-08-16
+ */
+public interface UpdateCommentService extends IService<UpdateComment> {
+    List<UpdateComment> getComments(int sid);
+}

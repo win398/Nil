@@ -1,0 +1,6 @@
+sms:
+  apiUrl: https://sms_developer.zhenzikj.com
+  appId: 112215
+  appSecret: 3e5e40f4-2a27-4d52-84c1-a58e2ca57927
+  timeOut: 3
+  codeLength: 6

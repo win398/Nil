@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbpu.nil.mapper.ConverseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.edu.hbpu.nil.entity.Converse">
+        <id column="msgId" property="msgId" />
+        <result column="sendAccount" property="sendAccount" />
+        <result column="receiveAccount" property="receiveAccount" />
+        <result column="sendTime" property="sendTime" />
+        <result column="msgContent" property="msgContent" />
+        <result column="msgState" property="msgState" />
+    </resultMap>
+
+</mapper>

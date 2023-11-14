@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbpu.nil.mapper.FriendVerificationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.edu.hbpu.nil.entity.FriendVerification">
+        <id column="verificationId" property="verificationId" />
+        <result column="fromUid" property="fromUid" />
+        <result column="toUid" property="toUid" />
+        <result column="content" property="content" />
+        <result column="sendTime" property="sendTime" />
+        <result column="verify_state" property="verifyState" />
+        <result column="groupIndex" property="groupIndex" />
+        <result column="nameMem" property="nameMem" />
+    </resultMap>
+
+</mapper>

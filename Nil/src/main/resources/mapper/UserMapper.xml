@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.hbpu.nil.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.edu.hbpu.nil.entity.User">
+        <id column="uid" property="uid" />
+        <result column="userName" property="userName" />
+        <result column="userNum" property="userNum" />
+        <result column="password" property="password" />
+        <result column="registerTime" property="registerTime" />
+        <result column="header" property="header" />
+        <result column="phoneNum" property="phoneNum" />
+        <result column="type" property="type" />
+    </resultMap>
+
+</mapper>
